@@ -1,16 +1,66 @@
 //
-//  String+.swift
-//  TecladoConsciente
+//  Sanityzer.swift
+//  HelperLib
 //
-//  Created by Edson Rottava on 18/11/20.
-//  Copyright © 2020 Brave. All rights reserved.
+//  Created by Edson Rottava on 09/06/21.
+//  Copyright © 2021 Rattova's Dev. All rights reserved.
 //
 
 import UIKit
 
-extension String {
-    func normalized() -> String {
-        var norma = self.replacingOccurrences(of: "ã", with: "a")
+class Sanityze {
+    class func number(_ text: String) -> String {
+        var clean = ""
+        
+        for c in text {
+            if (c.isNumber) {
+                clean.append(c)
+            }
+        }
+        
+        return clean
+    }
+    
+    class func char(_ text: String) -> String {
+        var clean = ""
+        
+        for c in text {
+            if (c.isLetter) {
+                clean.append(c)
+            }
+        }
+        
+        return clean
+    }
+    
+    class func charNumber(_ text: String) -> String {
+        var clean = ""
+        
+        for c in text {
+            if (c.isNumber || c.isLetter) {
+                clean.append(c)
+            }
+        }
+        
+        return clean
+    }
+    
+    class func alphaNumeric(_ text: String) -> String {
+        var clean = ""
+        
+        for c in text {
+            if (c.isNumber || c.isLetter || c.isSymbol) {
+                clean.append(c)
+            }
+        }
+        
+        return clean
+    }
+    
+    class func normalize(_ text: String?) -> String {
+        guard let t = text else { return "" }
+        var norma = t.lowercased()
+        norma = norma.replacingOccurrences(of: "ã", with: "a")
         norma = norma.replacingOccurrences(of: "â", with: "a")
         norma = norma.replacingOccurrences(of: "á", with: "a")
         norma = norma.replacingOccurrences(of: "à", with: "a")
@@ -25,7 +75,7 @@ extension String {
         norma = norma.replacingOccurrences(of: "í", with: "i")
         norma = norma.replacingOccurrences(of: "ì", with: "i")
         norma = norma.replacingOccurrences(of: "ï", with: "i")
-        
+
         norma = norma.replacingOccurrences(of: "ô", with: "o")
         norma = norma.replacingOccurrences(of: "õ", with: "o")
         norma = norma.replacingOccurrences(of: "ó", with: "o")
@@ -41,18 +91,6 @@ extension String {
         norma = norma.replacingOccurrences(of: "ç", with: "c")
         norma = norma.replacingOccurrences(of: "ñ", with: "n")
         
-        norma = norma.replacingOccurrences(of: ", ", with: " ")
-        norma = norma.replacingOccurrences(of: ",", with: " ")
-        
-        var clean = ""
-        for w in norma {
-            if w.isLetter || w == " " {
-                clean.append(w)
-            } else {
-                clean.append(" ")
-            }
-        }
-        
-        return clean
+        return norma
     }
 }

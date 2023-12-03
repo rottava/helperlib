@@ -1,0 +1,74 @@
+/*
+ Localizable.strings
+ HelperLib
+ 
+ Created by Edson Rottava on 09/06/21.
+ Copyright © 2021 Rattova's Dev. All rights reserved.
+ */
+
+// MARK: BUTTON
+"system.button.add" = "Adicionar";
+"system.button.addHint" = "Botão para adicionar";
+"system.button.back" = "Voltar";
+"system.button.backHint" = "Botão para voltar";
+"system.button.change" = "Trocar";
+"system.button.changeHint" = "Botão para Trocar";
+"system.button.cancel" = "Cancelar";
+"system.button.cancelHint" = "Botão para cancelar";
+"system.button.close" = "Fechar";
+"system.button.closeHint" = "Botão para fechar o popup";
+"system.button.cont" = "Continuar";
+"system.button.contHint" = "Botão para continuar";
+"system.button.done" = "Pronto";
+"system.button.doneHint" = "Botão para prosseguir";
+"system.button.edit" = "Editar";
+"system.button.editHint" = "Botão para editar";
+"system.button.finish" = "Concluir";
+"system.button.finishHint" = "Botão para concluir";
+"system.button.logout" = "Sair";
+"system.button.less" = "Ver menos";
+"system.button.lessHint" = "Botão para menos informações";
+"system.button.more" = "Ver mais";
+"system.button.moreHint" = "Botão para mais informações";
+"system.button.next" = "Próximo";
+"system.button.nextHint" = "Botão para avançar";
+"system.button.ok" = "Ok";
+"system.button.okHint" = "Botão para avançar";
+"system.button.save" = "Salvar";
+"system.button.saveHint" = "Botão para salvar";
+"system.button.select" = "Selecionar";
+"system.button.selectHint" = "Botão para selecionar a opção";
+"system.button.settings" = "Preferências";
+"system.button.settingsHint" = "Botão para abrir preferências";
+
+// MARK: ERROR
+"system.error.connection" = "Não foi possível concluir operação";
+
+// MARK: PERMISSION
+"system.error.permission.gallery" = "Não foi possível acessar a galera, forneça a permissão para o aplicativo e tente novamente";
+
+// MARK: INVALID
+"system.error.invalid.age" = "Apenas para maiores de 18 anos";
+"system.error.invalid.card" = "Número inválido";
+"system.error.invalid.cnpj" = "CNPJ inválido";
+"system.error.invalid.cpf" = "CPF inválido";
+"system.error.invalid.cpfj" = "CPF / CNPJ inválido";
+"system.error.invalid.cnh" = "CNH inválido";
+"system.error.invalid.cvv" = "CVV inválido";
+"system.error.invalid.date" = "Data inválida";
+"system.error.invalid.email" = "E-mail inválido";
+"system.error.invalid.empty" = "Campo não pode ser vazio";
+"system.error.invalid.name" = "Nome inválido";
+"system.error.invalid.password" = "Senha inválida";
+"system.error.invalid.phone" = "Telefone inválido";
+"system.error.invalid.repassord" = "Senha incorreta";
+"system.error.invalid.rg" = "RG inválido";
+"system.error.invalid.time" = "Horário inválido";
+
+// MARK: HYPERLINKS
+"system.hyperlink.privacy" = "Políticas de Privacidade";
+"system.hyperlink.privacyLink" = "https://url.com.br/politica-de-privacidade";
+"system.hyperlink.terms" = "Termos de Uso";
+"system.hyperlink.termsLink" = "https://url.com.br/politica-de-cookies";
+"system.hyperlink.termsAlways" = "termos e condições";
+"system.hyperlink.termsAlwaysLink" = "https://url.com.br/politica-de-privacidade";
